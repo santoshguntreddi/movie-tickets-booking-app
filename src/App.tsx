@@ -1,9 +1,15 @@
+import { Container } from "@mui/material";
+import AppAppBar from "./components/AppAppBar";
+import Routing from "./routing";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>Welcome to Movie Tickets App</h1>
+      <AppAppBar />
+      <Container sx={{ mt: 3 }}>
+        <Routing />
+      </Container>
     </>
   );
 }

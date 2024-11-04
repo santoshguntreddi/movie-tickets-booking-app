@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# 🎥Movies_Booking
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **🎥Movies_Booking**, a platform to basic movie booking app.
 
-Currently, two official plugins are available:
+## Routes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| Path                 | Screen        |
+| -------------------- | ------------- |
+| `/`                  | Home          |
+| `/movies/`           | Movies        |
+| `/movies/{movie-id}` | Movie Details |
+| `/bookings`          | Bookings      |
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Here's a list:
 
-- Configure the top-level `parserOptions` property like this:
+- **[Vite](https://vitejs.dev/)**
+- **[React](https://reactjs.org/)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[Redux Toolkit](https://redux-toolkit.js.org/)**
+- **[Material UI](https://mui.com/material-ui/)**
+- **[Axios](https://axios-http.com/)**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Features
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+**🎥Movies_Booking** offers a variety of features to provide a seamless booking experience:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Browse Movies**: Explore a wide selection of movies.
+- **Book Tickets**: Choose your seats and book tickets in a few clicks.
+- **View Bookings**: View past bookings.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Getting Started
+
+### Prerequisites
+
+Before installation, please ensure you have the latest version of Node.js and npm installed. Visit [Node.js official site](https://nodejs.org/) to download and install them.
+
+### Install Dependencies
+
+Once you have cloned the repository, you'll need to install the project's dependencies. These dependencies are required for the project to run properly. Navigate to the project directory and use one of the following commands, depending on whether you are using npm or Yarn as your package manager:
+
+- **Using npm:**
+
+  ```bash
+  npm install
+  ```
+
+  OR
+
+- **Using yarn:**
+
+  ```bash
+  yarn install
+  ```
+
+- **Run the application:**
+  ```bash
+  npm run dev
+  ```
+  OR
+  ```bash
+  yarn dev
+  ```
